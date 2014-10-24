@@ -12,6 +12,11 @@ http://getbootstrap.com/css/#grid-responsive-resets
     <meta name="author" content="">
 
     <title>My Title</title>
+    <!-- hover and photo css for second section -->
+    <link href="css/hoverex-all.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+
 
     <!-- Bootstrap Core -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -156,9 +161,10 @@ http://getbootstrap.com/css/#grid-responsive-resets
                     </a>
                 </div>
                 <div class="col-sm-4 square-item">
-                    <a href="#squareModal6" class="square-link" data-toggle="modal">
+                    <a data-rel="prettyPhoto" class="square-link" href="img/portfolio/portfolio_01.jpg" data-animate="fadeInUp">
                         <div class="caption">
                             <div class="caption-content">
+
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
@@ -168,6 +174,102 @@ http://getbootstrap.com/css/#grid-responsive-resets
             </div>
         </div>
 </section>
+
+
+<section id="g">
+<!-- in this section, I use
+1. hoverex-all.css, 2. jquery.hoverex.min.js, 3. jquery.prettyphoto.js, 4. jquery in the project folder and loaded on top
+-->
+
+
+    <div class="container">
+        <div class="row centered">
+          <div class="col-md-8 col-md-offset-2">
+            <h2>Check some of my latest works.</h2>
+            <br/>
+            <br/>
+          </div><!--/col-md-8-->
+        </div><!--/row-->
+
+        <div class="row centered">
+          <div class="col-md-4 portfolio-item web-design">
+            <div class="he-wrap tpl6">
+                <img src="img/portfolio/portfolio_01.jpg" class="img-responsive" alt="">
+                  <div class="he-view">
+                    <div class="bg a0" data-animate="fadeIn">
+                        <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                         <a data-rel="prettyPhoto" href="img/portfolio/portfolio_01.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                     </div><!-- he bg -->
+                </div><!-- he view -->    
+            </div><!-- he wrap -->
+          </div>
+
+          <div class="col-md-4 portfolio-item web-design">
+            <div class="he-wrap tpl6">
+                <img src="img/portfolio/portfolio_02.jpg" class="img-responsive" alt="">
+                  <div class="he-view">
+                    <div class="bg a0" data-animate="fadeIn">
+                        <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                         <a data-rel="prettyPhoto" href="img/portfolio/portfolio_02.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                     </div><!-- he bg -->
+                </div><!-- he view -->    
+            </div><!-- he wrap -->
+          </div>
+
+          <div class="col-md-4 portfolio-item web-design">
+            <div class="he-wrap tpl6">
+                <img src="img/portfolio/portfolio_03.jpg" class="img-responsive" alt="">
+                  <div class="he-view">
+                    <div class="bg a0" data-animate="fadeIn">
+                        <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                         <a data-rel="prettyPhoto" href="img/portfolio/portfolio_03.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                     </div><!-- he bg -->
+                </div><!-- he view -->    
+            </div><!-- he wrap -->
+          </div>
+        </div> <!-- end first row -->
+        <br/>
+
+        <div class="row centered">
+          <div class="col-md-4 portfolio-item web-design">
+            <div class="he-wrap tpl6">
+                <img src="img/portfolio/portfolio_04.jpg" class="img-responsive" alt="">
+                  <div class="he-view">
+                    <div class="bg a0" data-animate="fadeIn">
+                        <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                         <a data-rel="prettyPhoto" href="img/portfolio/portfolio_04.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                     </div><!-- he bg -->
+                </div><!-- he view -->    
+            </div><!-- he wrap -->
+          </div>
+
+          <div class="col-md-4 portfolio-item web-design">
+            <div class="he-wrap tpl6">
+                <img src="img/portfolio/portfolio_05.jpg" class="img-responsive" alt="">
+                  <div class="he-view">
+                    <div class="bg a0" data-animate="fadeIn">
+                        <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                         <a data-rel="prettyPhoto" href="img/portfolio/portfolio_05.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                     </div><!-- he bg -->
+                </div><!-- he view -->    
+            </div><!-- he wrap -->
+          </div>
+
+          <div class="col-md-4 portfolio-item web-design">
+            <div class="he-wrap tpl6">
+                <img src="img/portfolio/portfolio_06.jpg" class="img-responsive" alt="">
+                  <div class="he-view">
+                    <div class="bg a0" data-animate="fadeIn">
+                        <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                         <a data-rel="prettyPhoto" href="img/portfolio/portfolio_06.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                     </div><!-- he bg -->
+                </div><!-- he view -->    
+            </div><!-- he wrap -->
+          </div>
+        </div>  
+    </div>
+</section>    
+
 
 <!-- Footer -->
 <footer class="text-center">
@@ -225,11 +327,16 @@ http://getbootstrap.com/css/#grid-responsive-resets
 </footer>
 
 
-
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+</script>
 </body>
 </html>    
 
 <!-- Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script src="js/jquery.hoverex.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/sites.js"></script>
